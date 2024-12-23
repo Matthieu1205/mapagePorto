@@ -1,16 +1,19 @@
-
-div{
-    font-weight: 100 ;
-    color:black;
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+/* div{
+    font-weight: 100px;
+    color:rgb(5, 131, 57);
     text-align: center;
-    background-color: rgb(255, 196, 0);
     border-radius: 30px;
     padding: 10px;
-    width: 10%;
-    height: 20%;
+    
     
 
-}
+} */
 .cliquer:hover
 {
 color:rgb(12, 141, 201);
@@ -19,11 +22,15 @@ background-color: chartreuse;
 .cliquer
 {
     display: inline-block;
+    background-color: darkgoldenrod;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
 }
 nav 
  {
     flex: 1;
-    text-align: right;
+    text-align: center;
 
     
 }
@@ -39,26 +46,74 @@ nav  li a
 text-decoration: none;
 color: #555;
 }
+nav li:hover a{
+    color: rgb(8, 12, 218);
+}
 h1
 {
     color: rgb(10, 70, 182);
+}
+h2
+{
+    color: brown;
+}
+
+/*
+{
+    
+        width: 350px;
+        height: 350px;
+       object-fit: cover;
+       margin-top: 40px;
+       padding-left: 230px;
+       margin-block: 20px;
     
 }
-.section1 
+       */
+/* body
 {
-    padding-block: 150px;
-    border: 1px solid black;
-    padding: 50px;
-    margin: 20%;
-    background-image:url(OIP.jpg);
-    background-repeat: no-repeat;
-    background-position: 80%;
-    height: 50vh;
-    border-radius:200px;
-    text-decoration:brown;
-    
+    overflow: hidden;
+} */
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #555;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+b{
+    font-size: 50px;
+    color: rgb(8, 12, 218);
+}
+.logo span{
+    color: rgb(8, 12, 218);
+}
+.footer h1
+{
+    text-transform:inherit;
+    text-decoration:underline rgb(243, 240, 241);
+}
 
+.section1
+{
 
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 10%;  
+    overflow: hidden;
+}
+.Sguache, .Sdroite
+{
+    width: 50%;
+}
+.Sguache{
+    z-index: 5;
+}
+.textB{
+    display: block;
 }
 .section1 ul li
 {
@@ -69,29 +124,201 @@ h1
 .section2
 {
     background-color: antiquewhite;
-    border:1px solid black ;
     padding: 50px;
-    margin: 20%;
-    position: inherit;
-
+    margin: 50px;
+    
 }
 .section3
 {
     background-color: rgb(161, 116, 182);
-    border:1px solid black;
     padding: 50px;
-    margin: 20%;
+    margin: 50px;
 
+}
+form
+{
+    text-decoration: underline;
+    color: bisque;
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: center;
+    
+
+}
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+    max-width: 690px;
+    margin: 5px;
+    
+   
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    
+    padding: 3px;
+    margin-bottom: 3px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 .footer
 {
-    background-color: darkgrey;
-    border: 1px solid black;
-    padding: 50px;
-    margin: 20%;
-    border-radius: 50px;
+    background-color: #3DC2EC;
+    padding: 10px;
+    margin: 50px;
     text-align: center;
+    text-decoration-color: #B1F0F7
+    
 
 }
+header
+{
+    background-color: rgb(240, 240, 114);
+    position: sticky;
+    top: 0;
+    padding: 10px 20px;
+    margin: 20px;
+    text-align: center;
+    
+}
+ header img
+{
+    width: 25px;
+    height: 25px;
+    color: blue;
+    
+    
+} 
+.reseaux img{
+    height:5%;
+    font-size: 10px;
+    margin: 20px 10px;
+    padding: 3px;
+    
+}
+.reseaux{
+    
+    text-align: right;
+}
+.textB{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color:#555;;
+}
+.textB::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: yellow;
+}
+.section1, .Sguache p{
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    text-align: justify;
+    color: #555;
+}
+.butn2{
+    width: 100%;
+    position: relative;
+    left: 50px;
+}
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    background-color: #555;
+    color: #fff;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0px 15px 10px rgb(0, 0, 0.4);
 
+}
+button:hover{
+    background-color: yellow;
+}
+.groupimg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-left: 35px;
+}
+.groupimg img{
+    position: relative;
+    height: 100%;
+    width: calc(105%);
+    right: -55px;
+    top: 115px;
+    padding-left: 800px;
+    animation: animateImg 5s linear infinite;
 
+}
+@keyframes animateImg{
+    50%{
+        right: 10px;
+        top: 15px;
+    }
+}
+.groupimg #idkkm{
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    transform: translate(-50%,-50%) rotate(-15deg);
+    filter: saturate(200%);
+    width: 160%;
+    animation: alternatesplashre 5s linear infinite;
+}
+@keyframes lternatesplashre {
+   50% {
+        right: 37%;
+        top: 60%;
+        width: 155%;
+    }
+}
+.section1::before{
+    position: absolute;
+    content: '';
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: linear-gradient(4s,#ffe800,pink);
+    left: -17%;
+    top: 15%;
+    animation: beforeAnime 6s linear infinite;
+}
+@keyframes beforeanime{
+    50%{
+        left: -13%;
+        top: 41%;
+
+    }
+}
+.section1::after{
+    position: absolute;
+    content: '';
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: linear-gradient(4s,#ffe800,pink);
+    left: 35px;
+    top: 15px;
+    animation: afterAnime 6s linear infinite;
+}
+@keyframes aftereAnime{
+    50%{
+        left: 27%;
+        top: 10%;
+
+    }
+}#textDefil{
+    color:#ffe800 ;
+}

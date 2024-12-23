@@ -5,35 +5,47 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Mon Portofolio</title>
     <link rel="stylesheet" href="strylesPorto.css">
+    <script defer src="/chemin-vers-fontawesome/js/all.js"></script>      
 </head>
 <body>
-    
         <header>
-            
-            <h1>PORTOFOLIO</h1>    
-    </header>
-    <nav>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Work</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
+            <div class="logo"><span>C</span>odeur <b>.</b></div>
+            <h1>MON PORTOFOLIO</h1>
+            <div class="reseaux">
+                <img src="6422199.png">
+                <img src="6422210.png">
+                <img src="12107622.png">
+                <img src="6422215.png">
+             </div>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Work</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                
+            </nav>
 
-    </nav>
-   
+         </header>
+    
     <section class="section1">
-        
-        <ul>
-            <li>Nom : KOUADIO</li>
-            <li>Prenom : KOUASSI MATHIEU</li>
-            <li>Contact: 0102621118</li>
-            <li>Nationalié : Ivoirienne</li>
-            <li>Age: 30 ans</li>
-            <li>Ville de naissance</li>
-            <li>Ville actuelle</li>
-        </ul>
-       
+       <div class="Sgauche">
+        <span class="textB">Salut</span>
+        <h1>Je suis <span id="textDefil"></span></h1>
+        <p>Webmaster | Developpeur front-end |<br> Analyste dev | Homme d'affaire | Youtubeur |<br> Dev Full Stack</p>
+         <div class="butn2">
+            <button>Télécharger CV</button>
+            <button>Prèt</button>
+         </div>
+      </div> 
+      
+        <div class="Sdroite">
+        <div class="groupimg">
+            <img src="splashre.png" id="idkkm">
+            <img src="moik.png" >
+        </div> 
+      </div> 
     </section >
     <section class="section2">
         <h1>ABOUT</h1>
@@ -53,8 +65,10 @@
     <footer class="footer">
         <h1>ME CONTACTER</h1>
         <form action="/envoyer_formulaire" method="post"> 
-            <label for="nom">Nom:</label><br> 
+            <label for="nom" >Nom:</label><br> 
             <input type="text" id="nom" name="nom" required><br><br>
+            <label for="nom">Prénoms</label><br> 
+            <input type="text" id="Prénoms" name="Prénoms" required><br><br>
             <label for="email">Email:</label><br> <input type="email" id="email" name="email" required><br><br> 
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="4" required>
@@ -69,5 +83,18 @@
             <a href="#">Contact</a>
         </p>
     </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#textDefil', {
+      strings: ["Apprenant","Developpeur","Youtubeur"],
+      loop:1,
+      startDelay: 100,
+      backSpeed: 100,
+      typeSpeed: 50,
+    });
+  </script>
+    
 </body>
 </html>
